@@ -1,0 +1,11 @@
+default: &default
+  web_url: <%= ENV['POLKAMARKETS_WEB_URL'] %>
+
+production:
+  <<: *default
+
+staging:
+  <<: *default
+
+development:
+  <<: *default

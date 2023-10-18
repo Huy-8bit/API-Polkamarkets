@@ -1,0 +1,21 @@
+# default: &default
+#   ipfs_api_url: <%= ENV['INFURA_IPFS_API_URL'] %>
+#   ipfs_project_id: <%= ENV['INFURA_IPFS_PROJECT_ID'] %>
+#   ipfs_project_secret: <%= ENV['INFURA_IPFS_PROJECT_SECRET'] %>
+#   ipfs_project_gateway: <%= ENV['INFURA_IPFS_PROJECT_GATEWAY'] %>
+
+default: &default
+  ipfs_api_url: "https://ipfs.infura.io:5001"
+  ipfs_project_id: "2WWTUAV9nC54x0GENdQSBjL5YzX"
+  ipfs_project_secret: "e5a0a5995f9064e9bba67e8d0cf54d3f"
+  ipfs_project_gateway: "https://demohuy8bit.infura-ipfs.io"
+  ipfs_public_gateway: "https://demohuy8bit.infura-ipfs.io"
+
+production:
+  <<: *default
+
+staging:
+  <<: *default
+
+development:
+  <<: *default

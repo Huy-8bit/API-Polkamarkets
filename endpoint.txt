@@ -1,0 +1,63 @@
+huy8bit@MacBook-Huy8bit polkamarkets-api % Rails routes
+Warning: the running version of Bundler (2.2.32) is older than the version that created the lockfile (2.3.11). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.3.11`.
+libsodium not available! You can continue to use discordrb as normal but voice support won't work.
+        Read https://github.com/shardlab/discordrb/wiki/Installing-libsodium for more details.
+/Users/huy8bit/.rbenv/versions/3.0.3/lib/ruby/gems/3.0.0/gems/bootsnap-1.11.1/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:30: warning: ⛔️ WARNING: Sidekiq testing API enabled, but this is not the test environment.  Your jobs will not go to Redis.
+                               Prefix Verb   URI Pattern                                                                              Controller#Action
+                    admin_sidekiq_web        /admin/sidekiq                                                                           Sidekiq::Web
+                        reload_market POST   /markets/:id/reload(.:format)                                                            api/markets#reload
+                              markets GET    /markets(.:format)                                                                       api/markets#index
+                                      POST   /markets(.:format)                                                                       api/markets#create
+                               market GET    /markets/:id(.:format)                                                                   api/markets#show
+                     reload_portfolio POST   /portfolios/:id/reload(.:format)                                                         api/portfolios#reload {:id=>/.*/}
+                       feed_portfolio GET    /portfolios/:id/feed(.:format)                                                           api/portfolios#feed {:id=>/.*/}
+                            portfolio GET    /portfolios/:id(.:format)                                                                api/portfolios#show {:id=>/.*/}
+                                users PUT    /users(.:format)                                                                         api/users#update
+                             articles GET    /articles(.:format)                                                                      api/articles#index
+                      whitelist_index GET    /whitelist(.:format)                                                                     api/whitelist#index
+                         achievements GET    /achievements(.:format)                                                                  api/achievements#index
+                          achievement GET    /achievements/:id(.:format)                                                              api/achievements#show
+                          leaderboard GET    /leaderboard(.:format)                                                                   api/leaderboards#index
+                 winners_leaderboards GET    /leaderboards/winners(.:format)                                                          api/leaderboards#winners
+                         leaderboards GET    /leaderboards(.:format)                                                                  api/leaderboards#index
+                                      GET    /leaderboards/:id(.:format)                                                              api/leaderboards#show {:id=>/.*/}
+               join_group_leaderboard POST   /group_leaderboards/:id/join(.:format)                                                   api/group_leaderboards#join
+                   group_leaderboards GET    /group_leaderboards(.:format)                                                            api/group_leaderboards#index
+                                      POST   /group_leaderboards(.:format)                                                            api/group_leaderboards#create
+                    group_leaderboard GET    /group_leaderboards/:id(.:format)                                                        api/group_leaderboards#show
+                                      PATCH  /group_leaderboards/:id(.:format)                                                        api/group_leaderboards#update
+                                      PUT    /group_leaderboards/:id(.:format)                                                        api/group_leaderboards#update
+                          tournaments GET    /tournaments(.:format)                                                                   api/tournaments#index
+                                      POST   /tournaments(.:format)                                                                   api/tournaments#create
+                       new_tournament GET    /tournaments/new(.:format)                                                               api/tournaments#new
+                      edit_tournament GET    /tournaments/:id/edit(.:format)                                                          api/tournaments#edit
+                           tournament GET    /tournaments/:id(.:format)                                                               api/tournaments#show
+                                      PATCH  /tournaments/:id(.:format)                                                               api/tournaments#update
+                                      PUT    /tournaments/:id(.:format)                                                               api/tournaments#update
+                                      DELETE /tournaments/:id(.:format)                                                               api/tournaments#destroy
+                                      GET    /achievement_tokens/:network/:id(.:format)                                               api/achievement_tokens#show
+                                      GET    /stats/:timeframe(.:format)                                                              api/stats#by_timeframe
+                                stats GET    /stats(.:format)                                                                         api/stats#index
+                      webhooks_faucet POST   /webhooks/faucet(.:format)                                                               api/webhooks#faucet
+                             ipfs_add POST   /ipfs/add(.:format)                                                                      api/ipfs#add
+                                 root GET    /                                                                                        api/ping#ping
+        rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                  action_mailbox/ingresses/postmark/inbound_emails#create
+           rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                     action_mailbox/ingresses/relay/inbound_emails#create
+        rails_sendgrid_inbound_emails POST   /rails/action_mailbox/sendgrid/inbound_emails(.:format)                                  action_mailbox/ingresses/sendgrid/inbound_emails#create
+  rails_mandrill_inbound_health_check GET    /rails/action_mailbox/mandrill/inbound_emails(.:format)                                  action_mailbox/ingresses/mandrill/inbound_emails#health_check
+        rails_mandrill_inbound_emails POST   /rails/action_mailbox/mandrill/inbound_emails(.:format)                                  action_mailbox/ingresses/mandrill/inbound_emails#create
+         rails_mailgun_inbound_emails POST   /rails/action_mailbox/mailgun/inbound_emails/mime(.:format)                              action_mailbox/ingresses/mailgun/inbound_emails#create
+       rails_conductor_inbound_emails GET    /rails/conductor/action_mailbox/inbound_emails(.:format)                                 rails/conductor/action_mailbox/inbound_emails#index
+                                      POST   /rails/conductor/action_mailbox/inbound_emails(.:format)                                 rails/conductor/action_mailbox/inbound_emails#create
+    new_rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/new(.:format)                             rails/conductor/action_mailbox/inbound_emails#new
+   edit_rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/:id/edit(.:format)                        rails/conductor/action_mailbox/inbound_emails#edit
+        rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#show
+                                      PATCH  /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#update
+                                      PUT    /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#update
+                                      DELETE /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#destroy
+rails_conductor_inbound_email_reroute POST   /rails/conductor/action_mailbox/:inbound_email_id/reroute(.:format)                      rails/conductor/action_mailbox/reroutes#create
+                   rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+            rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+                   rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+            update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+                 rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
